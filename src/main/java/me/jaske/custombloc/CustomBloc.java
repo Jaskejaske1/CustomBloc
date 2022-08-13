@@ -1,5 +1,6 @@
 package me.jaske.custombloc;
 
+import me.jaske.custombloc.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,9 +12,7 @@ public class CustomBloc implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
-        LOGGER.info("CustomBloc is ready to go!");
+
+        ModItems.registerModItems();
     }
 }
