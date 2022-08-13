@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "custombloc",
+  "version": "${version}",
+
+
+  "name": "CustomBloc",
+  "description": "",
+  "authors": [
+    "Jaske"
+  ],
+  "contact": {},
+  "license": "MIT License",
+  "icon": "assets/custombloc/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.jaske.custombloc.CustomBloc"
+    ],
+    "client": [
+      "me.jaske.custombloc.CustomBlocClient"
+    ]
+  },
+  "mixins": [
+    "custombloc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
